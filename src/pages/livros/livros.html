@@ -1,0 +1,35 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>livros</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <img src="{{livreto.imageUrl}}" />
+    <ion-card-content>
+      <ion-card-title>
+        {{livreto.titulo}}
+      </ion-card-title>
+      <p>
+        {{livreto.subtitulo}}
+      </p>
+      <p>
+        {{livreto.paginas}}
+      </p>
+      <p>
+        {{livreto.editora.nome}}
+      </p>
+      <p>
+        {{livreto.autor.nome}}
+      </p>
+      <p>
+        {{livreto.autor.descricao}}
+      </p>
+      <button ion-button color="green">Excluir</button>
+      <button ion-button (click)="alterarLivro(livreto)">Alterar</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
